@@ -18,7 +18,11 @@ import { ProductCategoryListComponent } from './components/product-category-list
   declarations: [ProductsComponent, ProductDescriptionComponent, ProductListComponent, ProductCategoryListComponent],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    SharedModule,
+    ReactiveFormsModule,
+    MaterialModule,
+    HttpClientModule
   ]
 })
 export class ProductsModule { }
