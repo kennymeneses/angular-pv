@@ -1,0 +1,50 @@
+<div class="container">
+
+    <input type="radio" name="images" id="i1" checked #check1>
+    <input type="radio" name="images" id="i2" #check2>
+    <input type="radio" name="images" id="i3" #check3>
+  
+    <div id="one" class="slide_img" #div_one>
+      <img src="https://falabella.scene7.com/is/image/FalabellaPE/230820-cpo-hh-colchones-m?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%20320w" [routerLink]="['/products', 'add']">
+
+      <label class="navigate_left" for="i3">
+        <mat-icon>navigate_before</mat-icon>
+      </label>
+      
+      <label class="navigate_right" for="i2">
+        <mat-icon>navigate_next</mat-icon>
+      </label>
+    </div>
+
+  
+    <div id="two" class="slide_img" #div_two>
+      <img src="https://falabella.scene7.com/is/image/FalabellaPE/240820-cpo-hh-video-m?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%320w">
+
+        <label class="navigate_left" for="i1">
+          <mat-icon>navigate_before</mat-icon>
+        </label>
+        
+        <label class="navigate_right" for="i3">
+          <mat-icon>navigate_next</mat-icon>
+        </label>
+    </div>
+  
+    <div id="three" class="slide_img" #div_three>
+      <img src="https://falabella.scene7.com/is/image/FalabellaPE/240820-cpo-hh-computo-m?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%20320w">
+
+      <label class="navigate_left" for="i2">
+        <mat-icon>navigate_before</mat-icon>
+      </label>
+      
+      <label class="navigate_right" for="i1">
+        <mat-icon>navigate_next</mat-icon>
+      </label>
+    </div>
+    
+    <div class="nav">
+      <label id ="dot1" for="i1" class="dots" ></label>
+      <label id ="dot2" for="i2" class="dots" ></label>
+      <label id ="dot3" for="i3" class="dots" ></label>
+    </div>
+
+  </div>

@@ -1,0 +1,21 @@
+.mat-sidenav-container{
+    color:#87837c;
+    background-color: transparent;
+    /* margin-top: 0; */
+}
+.mat-sidenav{
+    background-color:#333333;
+    /* margin-top:3.5rem; */
+    z-index: 12;
+}
+
+
+span{
+    color:#87837c;
+    font-weight:500;
+    font-weight: bold;
+}
+
+.mat-icon{
+    color:#87837c;
+}

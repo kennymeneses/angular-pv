@@ -9,6 +9,11 @@ import { ProductsModule } from './products/products.module';
 import { ProcessModule } from './process/process.module';
 import { ManagementModule } from './management/management.module';
 import { HomeModule } from './home/home.module';
+import { CuentaModule } from './cuenta/cuenta.module';
+import { AccessModule } from './access/access.module';
+
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -23,7 +28,9 @@ import { HomeModule } from './home/home.module';
     ProductsModule,
     ProcessModule,
     ManagementModule,
-    HomeModule
+    HomeModule,
+    CuentaModule,
+    AccessModule
   ],
   providers: [],
   bootstrap: [AppComponent]

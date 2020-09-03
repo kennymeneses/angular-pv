@@ -1,0 +1,242 @@
+.foto_main{
+    width: 100vw;
+    content:url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Dark-Batman-Phone-Background.jpg)
+}
+
+@media screen and (min-width: 960px) {
+    
+    .foto_main{
+        width: 100%;
+        content:url(https://hipertextual.com/files/2019/02/hipertextual-ben-affleck-explica-que-dejara-ser-batman-2019002688.jpg)
+    }
+
+}
+
+.container{
+    width:100vw;
+    max-width: 100%;
+    height:432px;
+    background-color: darkgray;
+    padding: 0;
+    margin: auto;
+    position:relative;
+    overflow: hidden;
+    
+}
+
+.slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+}
+
+.slide_img img{
+    width:100%;
+    height: 100%;
+    
+}
+
+.nav{
+    display:none;
+    }
+
+.navigate_left{
+    display:none;
+}
+
+.navigate_right{
+    display:none;
+}
+
+@media screen and (min-width: 960px) {
+    
+
+    .container{
+        width:100%;
+        height: 397px;
+        margin: auto;
+        position:relative;
+        background-color: black;
+        overflow: hidden;
+        max-width: 1680px;
+        top: 7rem;
+    }
+
+    .slide_img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor:pointer;
+    }
+    
+    .slide_img img{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    #one img{
+        content:url(https://falabella.scene7.com/is/image/FalabellaPE/230820-cpo-hh-colchones?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%201680w)
+    }
+
+    #two img{
+        content:url(https://falabella.scene7.com/is/image/FalabellaPE/240820-cpo-hh-computo?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%201680w)
+    }
+
+    #three img{
+        content:url(https://falabella.scene7.com/is/image/FalabellaPE/240820-cpo-hh-video?hei=490&amp;fmt=webp&amp;qlt=85&amp;cache=off&amp;vid=1%201680w)
+    }
+
+    .nav{
+        /* margin-top:0.8rem; */
+        position: absolute;
+        width:100%;
+        height: 14px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        z-index: 12;
+        background-color: white;
+        bottom: 0rem;
+    }
+    
+    .dots{
+        top:0px;
+        width: 9px;
+        height: 9px;
+        margin: 0 4px;
+        border-radius: 40%;
+        position:relative;
+        display:inline-block;
+        background-color:grey;
+        cursor: pointer;
+        transition: .5s;
+        }
+    
+    .navigate_left{
+        position:absolute;
+        width:4rem;
+        height: 12rem;
+        top:5rem;
+        left:1.5rem;
+        background-color: transparent;
+        z-index: 12;
+        cursor:pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .navigate_right{
+        position:absolute;
+        width:4rem;
+        height: 12rem;
+        top:5rem;
+        right:1.5rem;
+        background-color: transparent;
+        z-index: 12;
+        cursor:pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .navigate_left:hover, .navigate_right:hover {
+		transition: .3s;
+        background-color: #2c2c2e;
+		color: #ffffff; 
+    }
+
+    .mat-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        color:#ffffff;
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+}
+
+
+
+#i1, #i2, #i3{
+    display:none;
+}
+
+
+.slide_img{
+    z-index: -1;
+}
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three
+{
+    z-index:9;
+    
+    animation: fadeOutLeft 1.5s ease-in-out forwards;
+    
+    animation-fill-mode: initial;
+    
+}
+
+
+#i1:not(:checked) ~ #one{
+    z-index:9;
+
+    animation: fadeOutLeft1 1.5s ease-in-out forwards;
+}
+
+#i2:not(:checked) ~ #two{
+    z-index:9;
+
+    animation: fadeOutLeft1 1.5s ease-in-out forwards;
+} 
+
+#i3:not(:checked) ~ #three{
+    z-index:9;
+
+    animation: fadeOutLeft1 1.5s ease-in-out forwards;
+} 
+
+
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3
+{
+    background-color: black;
+}
+
+
+
+ @keyframes fadeOutLeft {
+    0% {
+       /* opacity: 1; */
+       transform: translateX(-100%);
+    }
+    100% {
+       /* opacity: 0; */
+       transform: translateX(0%);
+       
+    }
+ } 
+
+
+
+ @keyframes fadeOutLeft1 {
+
+    0% {
+        /* opacity: 1; */
+        transform: translateX(0%);
+     }
+     100% {
+        /* opacity: 0; */
+        transform: translateX(100%);
+        
+     }
+
+ }

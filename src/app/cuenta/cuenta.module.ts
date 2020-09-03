@@ -6,21 +6,22 @@ import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../shared/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 
-import { HomeRoutingModule } from './home-routing.module';
-import { HomeComponent } from './home.component';
-import { LoginComponent } from './components/login/login.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { CuentaRoutingModule } from './cuenta-routing.module';
+import { CuentaComponent } from './cuenta.component';
+import { MyProfileComponent } from './components/my-profile/my-profile.component';
+import { ProfileEditComponent } from './components/profile-edit/profile-edit.component';
 
 
 @NgModule({
-  declarations: [HomeComponent, LoginComponent, CarouselComponent],
+  declarations: [CuentaComponent, MyProfileComponent, ProfileEditComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule,
+    CuentaRoutingModule,
     SharedModule,
     ReactiveFormsModule,
     MaterialModule,
     HttpClientModule
+
   ]
 })
-export class HomeModule { }
+export class CuentaModule { }
